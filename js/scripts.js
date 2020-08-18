@@ -1,11 +1,17 @@
 $(document).ready(function() {
+
   $("form#stressTestQuiz").submit(function(event) {
     event.preventDefault();
-    $("#stress-responses").show();
-    $("input:checkbox[name=work-transportation]:checked").each(function() {
-      const stressResponseAnswers = $(this).val();
-      $('#work-responses').append(stressResponseAnswers + "<br>");
+
+    
+    $("input:checkbox[name=stress-symptoms]:checked").each(function() {
+      const stressSymptomsAnswers = $( ).val();
+      $('#stress-symptoms').append(stressSymptomsAnswers + "<br>");
+  
+      $("#stress-symptoms").show();
     });
-    $('#transportation_survey').hide();
+
+
+    $('#stressTestQuiz').hide();
   });
 });

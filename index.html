@@ -16,31 +16,34 @@
       <form id="stressTestQuiz">
         <div class="form-group">
           <p>Check all symptoms of stress that you have experienced in the last month.</p>
-          <input type="checkbox" name="stress-symptoms" value="panic"> Panic Attacks<br>
-          <input type="checkbox" name="stress-symptoms" value="breathing"> Trouble Breathing<br>
-          <input type="checkbox" name="stress-symptoms" value="badSleeping"> Trouble Sleeping<br>
-          <input type="checkbox" name="stress-symptoms" value="badEating"> Trouble Eating<br>
+          <input type="checkbox" name="stress-symptoms" value="1"> Panic Attacks<br>
+          <input type="checkbox" name="stress-symptoms" value="1"> Trouble Breathing<br>
+          <input type="checkbox" name="stress-symptoms" value="1"> Trouble Sleeping<br>
+          <input type="checkbox" name="stress-symptoms" value="1"> Trouble Eating<br>
         </div>
         <div class="form-group">
           <p>Have you experienced any of these stress warning signs?</p>
-          <input type="checkbox" name="stress-warning" value="overwhelmed"> Feeling Overwhelmed<br>
-          <input type="checkbox" name="stress-warning" value="depressed"> Depressed<br>
-          <input type="checkbox" name="stress-warning" value="irritable"> Irritable<br>
-          <input type="checkbox" name="stress-warning" value="tired"> Feeling Tired<br>
+          <input type="checkbox" name="stress-warning" value="1"> Feeling Overwhelmed<br>
+          <input type="checkbox" name="stress-warning" value="1"> Depressed<br>
+          <input type="checkbox" name="stress-warning" value="1"> Irritable<br>
+          <input type="checkbox" name="stress-warning" value="1"> Feeling Tired<br>
         </div>
         <div class="form-group">
           <p>What coping mechanisms do you use to deal with stress?</p>
-          <input type="checkbox" name="stress-coping" value="water"> Drink Water<br>
-          <input type="checkbox" name="stress-coping" value="goodSleeping"> Sleep<br>
-          <input type="checkbox" name="stress-coping" value="music"> Listen to Music<br>
-          <input type="checkbox" name="stress-coping" value="goodEating"> Eat Healthy Food<br>
+          <input type="checkbox" name="stress-coping" value="-1"> Drink Water<br>
+          <input type="checkbox" name="stress-coping" value="-1"> Sleep<br>
+          <input type="checkbox" name="stress-coping" value="-1"> Listen to Music<br>
+          <input type="checkbox" name="stress-coping" value="-1"> Eat Healthy Food<br>
         </div>
 
         <button type="submit">Submit Survey</button>
       </form>
-      <span id="stress-responses">
+
+      <div id="stress-symptoms">
         <p><b>You are suffering from: </b></p>
-      </span>
+      </div>
+      <div id="stress-warning"></div>
+      <div id="stress-coping"></div>
     </div>
   </div>
 </body>
